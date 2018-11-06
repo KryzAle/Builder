@@ -12,12 +12,12 @@ public class Director {
      public Director() {
     }
     // --------------------------
-     public void construir( BuilderCoche builder )
+     public void construir( BuilderTelefono builder )
     {
-        builder.crearNuevoCoche();
-        builder.construirMotor();
-        builder.construirCarroceria();
-        builder.construirElevalunas();
-        builder.construirAireAcond();
+        builder.crearNuevoTelefono();
+        builder.instalarProcesador();
+        builder.instalarCarcasa();
+        builder.instalarGPU();
+        builder.instalarNPU();
     }
 }

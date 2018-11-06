@@ -8,27 +8,27 @@
  *
  * @author Kryz Ale
  */
-public class ConstructorCocheBase extends BuilderCoche {
-     public ConstructorCocheBase() {
+public class ConstructorTelefonoGamaBaja extends BuilderTelefono {
+     public ConstructorTelefonoGamaBaja() {
     }
     // ------------------------------
     @Override
-     public void construirMotor() {
-        this.coche.setMotor( "Motor de potencia mínima" );
+     public void instalarProcesador() {
+        this.telef.setProcesador( "Procesador DualCore" );
     }
     // ------------------------------
     @Override
-     public void construirCarroceria() {
-        this.coche.setCarroceria( "Carrocería de baja protección" );
+     public void instalarCarcasa() {
+        this.telef.setCarcasa( "Carcasa calidad baja " );
     }
     // ------------------------------
     @Override
-     public void construirAireAcond() {
-        this.coche.setAireAcond( false );
+     public void instalarNPU() {
+        this.telef.setGpu( false );
     }
     // ------------------------------
     @Override
-     public void construirElevalunas() {
-        this.coche.setElevalunasElec( false );
+     public void instalarGPU() {
+        this.telef.setNpu( false );
     }
 }

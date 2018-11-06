@@ -8,20 +8,20 @@
  *
  * @author Kryz Ale
  */
-public abstract class BuilderCoche {
-    protected Coche coche;
+public abstract class BuilderTelefono {
+    protected Telefono telef;
     // ------------------------------
-    public Coche getCoche() {
-        return this.coche;
+    public Telefono getTelefono() {
+        return this.telef;
     }
     // ------------------------------
-     public void crearNuevoCoche() {
-        this.coche = new Coche();
+     public void crearNuevoTelefono() {
+        this.telef = new Telefono();
     }
     // ------------------------------------
     // Métodos que deberán ser construídos por las clases que hereden de ésta
-     public abstract void construirMotor();
-     public abstract void construirCarroceria();
-     public abstract void construirAireAcond();
-     public abstract void construirElevalunas();
+     public abstract void instalarProcesador();
+     public abstract void instalarCarcasa();
+     public abstract void instalarNPU();
+     public abstract void instalarGPU();
 }

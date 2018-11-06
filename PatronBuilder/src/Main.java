@@ -13,32 +13,31 @@ public class Main
     public static void main(String[] args)
     {
         // Crear el objeto Director
-         Director objFabrica = new Director();
+         Director objetoFabrica = new Director();
         // Crear los objetos ConcreteBuilder
-         BuilderCoche base  = new ConstructorCocheBase();
-         BuilderCoche medio = new ConstructorCocheMedio();
-         BuilderCoche full  = new ConstructorCocheFull();
+         BuilderTelefono gamaBaja  = new ConstructorTelefonoGamaBaja();
+         BuilderTelefono gamaMedia = new ConstructorTelefonoGamaMedia();
+         BuilderTelefono gamaAlta  = new ConstructorTelefonoGamaAlta();
         // Construir un coche con equipamiento base
-         objFabrica.construir( base );
-         Coche cocheBase = base.getCoche();
+         objetoFabrica.construir( gamaBaja );
+         Telefono telefonogamabaja = gamaBaja.getTelefono();
         // Construir un coche con equipamiento medio
-        objFabrica.construir( medio );
-        Coche cocheMedio = medio.getCoche();
+        objetoFabrica.construir( gamaMedia );
+        Telefono telefonogamamedia = gamaMedia.getTelefono();
         // Construir un coche con equipamiento full
-        objFabrica.construir( full );
-        Coche cocheFull = full.getCoche();
+        objetoFabrica.construir( gamaAlta );
+        Telefono telefonogamaalta = gamaAlta.getTelefono();
         // Mostrar la información de cada coche creado
-        mostrarCaracteristicas( cocheBase );
-        mostrarCaracteristicas( cocheMedio );
-        mostrarCaracteristicas( cocheFull );
+        mostrarCaracteristicas( telefonogamabaja );
+        mostrarCaracteristicas( telefonogamamedia );
+        mostrarCaracteristicas( telefonogamaalta );
     }
     // --------------------------------
-    public static void mostrarCaracteristicas( Coche coche )
+    public static void mostrarCaracteristicas( Telefono telef )
     {
-        System.out.println( "Motor: " + coche.getMotor() );
-        System.out.println( "Carrocería: " + coche.getCarroceria() );
-        System.out.println( "Elevalunas eléctrico: " + coche.getElevalunasElec() );
-        System.out.println( "Airea acondicionado: " + coche.getAireAcond() );
-        System.out.println("===================================");
+        System.out.println( "Procesador: " + telef.getProcesador() );
+        System.out.println( "Carcasa: " + telef.getCarcasa() );
+        System.out.println( "NPU: " + telef.getNpu() );
+        System.out.println( "GPU: " + telef.getGpu() );
     }
 }

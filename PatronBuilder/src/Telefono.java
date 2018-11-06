@@ -8,44 +8,44 @@
  *
  * @author Kryz Ale
  */
-public class Coche {
-    private String motor = "";
-    private String carroceria = "";
-    private Boolean elevalunasElec = false;
-    private Boolean aireAcond = false;
+public class Telefono {
+    private String procesador = "";
+    private String carcasa = "";
+    private Boolean npu = false;
+    private Boolean gpu = false;
     // -------------------------------------------
-    public Coche() {
+    public Telefono() {
     }
     // -------------------------------------------
-    public String getMotor() {
-        return this.motor;
+    public String getProcesador() {
+        return this.procesador;
     }
     // -------------------------------------------
-    public void setMotor(String motor) {
-        this.motor = motor;
+    public void setProcesador(String motor) {
+        this.procesador = motor;
     }
     // -------------------------------------------
-    public String getCarroceria() {
-        return this.carroceria;
+    public String getCarcasa() {
+        return this.carcasa;
     }
     // -------------------------------------------
-    public void setCarroceria(String carroceria) {
-        this.carroceria = carroceria;
+    public void setCarcasa(String carroceria) {
+        this.carcasa = carroceria;
     }
     // -------------------------------------------
-    public Boolean getElevalunasElec() {
-        return elevalunasElec;
+    public Boolean getNpu() {
+        return npu;
     }
     // -------------------------------------------
-    public void setElevalunasElec(Boolean elevalunasElec) {
-        this.elevalunasElec = elevalunasElec;
+    public void setNpu(Boolean npu) {
+        this.npu = npu;
     }
     // -------------------------------------------
-    public Boolean getAireAcond() {
-        return aireAcond;
+    public Boolean getGpu() {
+        return gpu;
     }
     // -------------------------------------------
-    public void setAireAcond(Boolean aireAcond) {
-        this.aireAcond = aireAcond;
+    public void setGpu(Boolean gpu) {
+        this.gpu = gpu;
     }
 }
