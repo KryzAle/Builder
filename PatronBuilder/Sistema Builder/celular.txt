@@ -1,0 +1,4 @@
+Carcasa calidad Alta, Procesador OctaCore, true, true
+Carcasa calidad Alta, Procesador OctaCore, true, true
+Carcasa calidad Media, Procesador QuadCore, true, false
+Carcasa calidad baja , Procesador DualCore, false, false
